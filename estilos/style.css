@@ -12,3 +12,88 @@
     --fonte: "National Park", sans-serif;
 }
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--main-color);
+    padding: 10px;
+    font-family: var(--fonte)
+}
+
+main {
+    background-color: white;
+    width: 400px;
+    margin: auto;
+    margin-top: 20vh;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.253);
+}
+
+#imagem {
+    background-image: url(../imagens/pexels-isabella-mendes-107313-1795506.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 200px;
+}
+
+
+#formulario{
+    padding: 10px;
+    margin: auto;
+    
+}
+
+#formulario > h1{
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 2em;
+}
+
+#formulario > p{
+    text-align: justify;
+    margin: auto;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.input input{
+    width: 380px;
+}
+
+.input > .input-texto{
+    width: 365px;
+    background-color: #dad7cd50;
+    border: 3px solid var(--sec-color);
+    border-radius: 5px;
+    height: 30px;
+    font-family: var(--fonte);
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.input > .input-button{
+    font-family: var(--fonte);
+    border-radius: 5px;
+    border: none;
+    padding: 10px 0px;
+    margin-bottom: 5px;
+}
+
+.input > #btn-enviar{
+    background-color: var(--ter-color);
+    color: white;
+    font-weight: 700;
+}
+
+.input > #btn-esq{
+    background-color: white;
+    color: var(--ter-color);
+    border: 2px solid var(--ter-color);
+    font-weight: 700;
+}
