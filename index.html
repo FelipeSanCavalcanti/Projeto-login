@@ -19,22 +19,21 @@
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça o login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
 
-                <form id="dados" action="login.php" method="post">
-                    <p id="email-container" class="input input-txt">
+                <form action="login.php" method="post">
+                    <div class="campo">
                         <label for="iemail"><i class="material-symbols-outlined input-icon">alternate_email</i></label>
-                        <input class="input-texto" name="email" id="iemail" required type="email" autocomplete="on" placeholder="E-mail">
-                    </p>
-                    <p id="senha-container" class="input input-txt">
+                        <input name="email" id="iemail" required type="email" autocomplete="email" placeholder="E-mail">
+                    </div>
+                    <div class="campo">
                         <label for="isenha">
                             <i class="material-symbols-outlined input-icon">key
                             </i>
                         </label>
-                        <input class="input-texto" name="senha" id="isenha" required min="8" type="password" placeholder="Senha">
-                    </p>
-                    <p class="input input-btn">
-                        <input id="btn-enviar" class="input-button" type="submit" value="Enviar">
-                        <button class="btn" id="btn-esq">Esqueci a senha <i class="material-symbols-outlined">mail</i></button>
-                    </p>
+                        <input name="senha" id="isenha" required min="8" type="password" placeholder="Senha" minlength=8 maxlength=20>
+                    </div>
+                    <input id="btn-enviar" class="input-button" type="submit" value="Enviar">
+                    <button id="btn-esq">Esqueci a senha <i class="material-symbols-outlined">mail</i></button>
+                    
                 </form>
             </div>
         </section>
