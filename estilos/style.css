@@ -35,7 +35,6 @@ section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     background-color: white;
     width: 300px;
     height: 550px;
@@ -44,6 +43,7 @@ section#login{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.253);
     overflow: hidden;
 
+    transform: translate(-50%, -50%);
     transition: width .2s, height .2s;
     transition-timing-function: ease;
 }
@@ -78,27 +78,44 @@ section#login > div#formulario > p{
 
 form > div.campo{
     display: block;
+    padding: 0px;
     width: 100%;
+    height: 40px;
     background-color: var(--main-color);
-    padding: 5px;
-    border-radius: 5px;
+    border-radius: 7px;
+    border: 3px solid var(--main-color);
     margin: 7px 0px;
 }
 
-form > div.campo > label > i{
+div.campo > i{
+    margin-top: 5px;
+}
+
+div.campo > i > label{
     color: white;
+    width: 30px;
+    height: 100%;
+    padding: 5px 5px;
+    cursor: pointer;
 }
 
-form > div.campo > input{
+div.campo > input{
     font-family: var(--fonte);
+    font-size: 1em;
     text-indent: 5px;
-    width: 93.5%;
-    border-radius: 2px;
+    width: calc(100% - 39px);
+    height: 100%;
+    background-color: var(--white-color);
+    border: none;
+    border-radius: 7px;
+    transform: translateY(-7px);
 }
 
-form > div.campo > input{
-    
+div.campo > input:focus-within{
+    background-color: white;
 }
+
+
 
 form > input[type=submit]{
     display: block;
