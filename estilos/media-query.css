@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+:root{
+    --main-color: #344e41;
+    --sec-color: #3a5a40;
+    --ter-color: #588157;
+    --qua-color: #a3b18a;
+    --white-color: #dad7cd;
+
+    --fonte: "National Park", sans-serif;
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) and (orientation: portrait){
+    section#login{
+        width: 65vw;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) and (orientation: landscape){
+    section#login{
+        width: 65vw;
+    }
+
+        section#login > div#imagem{
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+
+    section#login > div#formulario{
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body {
+    background-image: linear-gradient(45deg, var(--main-color), var(--sec-color), var(--ter-color));
+    }
+
+    section#login{
+        width: 80vw;
+    }
+
+    section#login > div#imagem{
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+
+    section#login > div#formulario{
+        float: right;
+        width: 70%;
+        height: 100%;
+    }
+}
+
+
+@media screen and (min-width: 992px){
+    body {
+    background-image: linear-gradient(45deg, var(--main-color), var(--sec-color), var(--ter-color));
+    }
+
+
+    section#login{
+        width: 950px;
+    }
+
+    section#login > div#imagem{
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+
+    section#login > div#formulario{
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+}
